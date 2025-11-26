@@ -127,3 +127,5 @@ for (let a = 0; a < project2.length; a++) {
 
     gallery2.appendChild(card)
 }
+
+
