@@ -2,17 +2,68 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Mea+Culpa&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+/* ha */
 body {
-    padding: 10px;
     background-color: #D9CFC7;
+}
+
+main {
+
     font-family: "Montserrat", sans-serif;
+    width: 100%;
 }
 
 * {
     margin: 0;
     padding: 0;
 }
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+header h1 {
+    font-family:"Birthstone", cursive;
+    margin-left: 10px;
+}
+
+header h1:hover {
+
+    transition: 0.6s;
+    color: tomato;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    gap: 50px;
+    list-style: none;
+}
+
+header ul li {
+    gap: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0F044C;
+}
+
+header ul li a:hover {
+    transition: 0.6s;
+    color: tomato;
+}
+
+
+
+
+
 
 /* opening */
 .hero.opening {
@@ -38,7 +89,10 @@ body {
     color: #FF0000;
     font-family:"Birthstone", cursive;
     font-size: 96px;
-    cursor: pointer;
+}
+.halo:hover{
+    transition: 0.5s;
+    color: #0F044C;
 }
 
 .hero-isi h2 {
@@ -152,13 +206,24 @@ body {
 
 .kartuID a:hover {
     color: #FF0000;
+    transition: 0.7s;
 }
 
 .kartuID img {
     width: 50px;
 }
 
+/* dah */
+.hero.dah {
+    border-radius: 8px;
+}
 
+.hero.dah:hover {
+    box-shadow: 0px 3px 7px 0px grey;
+    transition: 0.5s ease-in-out;
+    transform: translateY(-5px);
+    border: none;
+}
 
 
 /* kartu ikon koding */
@@ -170,14 +235,19 @@ body {
     grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
 }
 
-/* mode hitam */
 
-body.dark {
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
     background-color: #0F044C;
+    margin-top: 20px;
+    padding: 10px;
 }
 
-.hero.dark {
-    background-color: #0F044C;
+footer p {
+    font-size: smaller;
+    color: aliceblue;
 }
 
 /* ? */
